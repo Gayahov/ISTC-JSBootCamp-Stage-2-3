@@ -1,0 +1,14 @@
+label {
+    display: block;
+}
+input {
+    display: block;
+}
+.button {
+    margin: 5px auto;
+}
+fieldset {
+    width: 200px;
+   
+    margin: 0 auto;
+}

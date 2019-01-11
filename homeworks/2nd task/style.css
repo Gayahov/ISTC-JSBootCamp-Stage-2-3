@@ -1,6 +1,10 @@
+body{
+    box-sizing: border-box;
+}
+
 .red_bg {
     background-color: #c41230;
-    height: 95vh;
+  /*  height: 95vh;*/
     
 }
 
@@ -84,10 +88,17 @@
     border-radius: 6px;
     cursor: pointer;
     color: white;
+    transition: 0.3s;
     text-transform: uppercase;
     background-color: #c41230;
 }
-
+.social_info input:hover{
+    background-color: #908c8c;
+    color: #11253d;
+}
+.clear {
+    clear: both;
+}
 
 .media {
     width: 68%;
@@ -100,6 +111,7 @@
 }
 
 .footer {
+    text-align: center;
     background-color: #11253d;
     padding: 10px;
 
@@ -178,7 +190,7 @@
 }
 .blue_bg {
     background-color: #00446a;
-    height: 80vh;
+   /* height: 80vh;*/
 }
 .obama_sec {
     border: 2px solid white;
