@@ -15,13 +15,24 @@
         <header class="flex-container">
             <div class="logo">&#966;</div>
             <nav>
-                <ul>
+                <ul class="ul_1">
                     <li><a href="#">Famo.us University</a></li>
                     <li><a href="#">Demos</a></li>
                     <li><a href="#">Famo.us/Angular</a></li>
                     <li><a href="#">Help</a></li>
                     <li><a href="#">Blog</a></li>
+            
                 </ul>
+                <div class="dropdown">
+                        <button onclick="myFunction()"  class="dropbtn toggle"> <i class="fa fa-bars"></i></button>
+                        <ul id="myDropdown" class="dropdown-content">
+                            <li> <a href="#home">Famo.us University</a></li>
+                            <li><a href="#about">Demos</a></li>
+                            <li> <a href="#contact">Famo.us/Angular</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                      </div>
             </nav>
             <div class="download">
                 <button  class="download">Download</button>
@@ -87,5 +98,6 @@
             </form>
         </footer>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>

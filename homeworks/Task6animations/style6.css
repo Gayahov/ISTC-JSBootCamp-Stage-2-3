@@ -1,0 +1,44 @@
+#red_circle { 
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border-radius: 50%;
+    animation-duration: 4s;
+    margin: 10% auto;
+    animation-fill-mode: forwards;
+}
+#black_circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 10% auto;
+    background-color: black;
+    border-radius: 50%;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+body {
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+}
+
+
+@keyframes example_1 {
+    0%   { left:0; top:0 }
+    25%  { left:200px; top:0 }
+    50%  { left:200px; top:300px; }
+    75%  { left:0px; top:300px; }
+    100% { left:0px; top:300px; }
+}
+@keyframes example_2 {
+    0%   { right:0; top:0 }
+    25%  { right:200px; top:0 }
+    50%  { right:200px; top:-300px; }
+    75%  { right:0px; top:-300px; }
+    100% { right:0px; top:-300px; }
+}
+
+}
