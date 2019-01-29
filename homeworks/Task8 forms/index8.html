@@ -7,28 +7,44 @@
     <link rel="stylesheet" type="text/css" href="style8.css">
     <title>forms</title>
 </head> 
-    <div class="main_bg">
-        <div class="container">
-            <div class="first_item"></div>
-            <div class="second_item">
-                <form action="http://rest.learncode.academy/api/learncode/friends"  method="post" onSubmit="return function()">
-                        <p>Sign Up</p>
-                        <input type="name" class="inputs" id="form_name" value="" placeholder="John Doe">
-                        <input type="email" class="inputs" id="form_email" value="" placeholder="e-mail">
-                        <p id="mess_email">e-mail not in correct format</p>
-                        <input type="password" class="inputs" id="form_psw" value="" placeholder="confirm password"   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-                        <p id="mess_pass">Password not in crrect format!!</p>
-                        <input type="password" class="inputs" id="confirm_psw" value="" placeholder="confirm password" >
-                        <span id="message">Your password and confirmation password do not match!!</span>
-                        <input type="checkbox" class="checkbox"> 
-                        <span>I agree all statemen in <a href="#"> Term and conditons</a></span>
-                        <input type="button" id="button" value="SIGN UP" onclick="validateForm()">
-                        <span class="sec_span">Already Have Account? <a href="#"> Login</a></span>
-                    </form>
-                <p id="demo"></p>    
-        </div>
-    </div>
 <body>
+        <div class="main_bg">
+                <div class="container">
+                    <div class="first_item"></div>
+                    <div class="second_item">
+                            <div class="reg_form">
+                                    <div class="sign_up" onclick="signUp()"><p class="signup_p">Sign Up</p> </div>
+                                    <div class="Login" onclick="Login()"><p class="login_p">Login</p></div>
+                            </div>
+                            <div id="form_sectiion">  
+                                <form id="signUp_form" >
+                                    <input type="name" class="inputs" id="form_name" value="" placeholder="John Doe">
+                                    <input type="email" class="inputs" id="form_email" value="" placeholder="e-mail">
+                                    <p id="mess_email">e-mail not in correct format</p>
+                                    <input type="password" class="inputs" id="form_psw" value="" placeholder="password"   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                                    <p id="mess_pass">Password not in correct format!!</p>
+                                    <input type="password" class="inputs" id="confirm_psw" value="" placeholder="confirm password" >
+                                    <span id="message">Your password and confirmation password do not match!!</span>
+                                    <input type="checkbox" class="checkbox"> 
+                                    <span>I agree all statemen in <a href="#"> Term and conditons</a></span>
+                                    <input type="button" id="button" value="SIGN UP" onclick="validateForm()">
+                                    <span class="sec_span">Already Have Account? <a href="#"> Login</a></span>
+                                </form>
+                                <form id="login_form">
+                                        <input type="name" class="inputs" id="login_username" value="" placeholder="Username">
+                                        <input type="password" class="inputs" id="login_password" value="" placeholder="Password">
+                                        <p id="mess_pass2"></p>
+                                        <input type="checkbox" class="checkbox"> 
+                                         <span>Remember me <a href="#"> / Forget password?</a></span>
+                                        <input type="button" id="button" value="Login"  onclick="validateLogin()">
+    
+                                </form>
+                            </div>
+                           
+                        <p id="demo"></p>    
+                </div>
+                
+            </div>
     <script src="main8.js"></script>
 </body>
 </html>

@@ -19,8 +19,10 @@ html, body{
 
 }
 .container{
+    box-sizing: border-box;
     display: flex;
     width: 50%;
+    min-height: 470px;
     background-color: #ffffff;
     margin: auto; 
     box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.75);
@@ -29,7 +31,12 @@ html, body{
     flex-direction: row;
     
 }
+#login_form{
+    display: none;
+
+}
 .first_item {
+
     background-image: url("images/pic.jpg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -40,15 +47,44 @@ html, body{
     width: 50%;
     margin: 30px 0 30px 30px;
 }
-form p {
-    font-size: 30px;
+.reg_form {
+    display: flex;
+    flex-direction: row;
+
+}
+.sign_up p {
+    font-size: 25px;
     font-style: italic;
     color: #e8a0a1;
     font-family: serif;
-    text-align: center;
+    text-align:center;
+    font-weight: 700;
+}
+.sign_up{
+    cursor: pointer;
+    margin-left: 10px;
+    width: 40%;
+    border-bottom: 2px solid #e8a0a1;
+    padding: 5px;
+}
+.Login {
+    cursor: pointer;
+    margin-left: 10px;
+    width: 40%;
+    border-bottom: 2px solid  #eae3e3;
+    padding: 5px;
+
+}
+.Login p {
+    font-size: 25px;
+    font-style: italic;
+    color: #eae3e3;
+    font-family: serif;
+    text-align:center;
     font-weight: 700;
 }
 .inputs {
+    outline: none;
     display: block;
     width: 80%;
     font-size: 12px;
@@ -57,8 +93,6 @@ form p {
     padding:  10px 10px 10px 20px;
     background-color: #f7f7f7;
     border-radius: 30px;
-    
-
 }
 .checkbox{
     margin-left: 20px;
@@ -77,6 +111,7 @@ span {
 }
 
 #button {
+    outline: none;
     background-color: #e8a0a1;
     border-radius: 21px;
     width: 40%;
@@ -142,7 +177,7 @@ span {
 }
 #mess_pass {
     display: none;
-        width: 160px;
+        width: 180px;
         margin-left: 10px;
         background: #f7f7f7;
         border-radius: 14px;
@@ -155,7 +190,21 @@ span {
         font-style: italic;
 
 }
-    
+#mess_pass2 {
+    display: none;
+        width: 180px;
+        margin-left: 10px;
+        background: #f7f7f7;
+        border-radius: 14px;
+        color: #e8a0a1;
+        position: relative;
+        line-height: 20px;
+        padding: 5px;
+        margin-top: 10px;
+        font-size: 12px;
+        font-style: italic;
+
+}
 
 
 
