@@ -183,6 +183,31 @@ section>.square_items>*:nth-child(4){
     height: 15.5vw;
     background-size: cover;
     margin-bottom: 3vw;
+
+}
+@media only screen and (max-width: 720px){
+    section>p{
+        font-size: 2vw;
+    }
+    section>.square_items{
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        width: 60vw;
+    }
+    section>.square_items>*{
+        width: 70vw;
+        display: flex;
+        margin: 1.5vw;
+        padding-bottom: 1vw;
+    }
+
+    .gellary>div{
+    width: 30vw;
+    height: 23vh;
+}
+
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -203,11 +228,17 @@ section>.square_items>*:nth-child(4){
     }
     #main_menu .menu_list{
         display: none;
+        
+        flex-direction: column;
+        justify-content: center;
+        width: 16vw;
+        padding-left: 0;
     }
     #main_menu {
-        width: 20vw
+        width: 9vw
     }
     #main_menu h3{
+        display: none;
         font-size: 2vw;
         color: red;
         /* text-align: center; */
@@ -252,31 +283,6 @@ section>.square_items>*:nth-child(4){
         margin-bottom: 3vw;
     }
 }
-@media only screen and (max-width: 720px){
-    section>p{
-        font-size: 2vw;
-    }
-    section>.square_items{
-        flex-wrap: wrap;
-        justify-content: center;
-        flex-direction: row;
-        width: 60vw;
-    }
-    section>.square_items>*{
-        width: 70vw;
-        display: flex;
-        margin: 1.5vw;
-        padding-bottom: 1vw;
-    }
-
-    .gellary>div{
-    width: 30vw;
-    height: 23vh;
-}
-
-
-}
-
 
 
 

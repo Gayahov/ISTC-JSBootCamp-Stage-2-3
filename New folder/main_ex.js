@@ -56,7 +56,16 @@ var menu_ul = [
         'TEAM',
         'CONTACT',
     ];
-
+    function showMenu(){
+        if (menu_list.style.display === "none") {
+            menu_list.style.display = "block";
+            logo_div.style.display = "none";
+          } else {
+            menu_list.style.display = "none";
+            logo_div.style.display = "block"
+          }
+        }
+    
 
     for (let key in menu_ul) {
         let li = document.createElement('li');
