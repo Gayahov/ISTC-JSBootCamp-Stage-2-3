@@ -106,6 +106,23 @@ var divs = document.getElementsByClassName('test');
 console.log (divs);
 
 
+// item_descr = document.querySelector("#test1");
+//     var p = document.createElement("p");
+//     p.appendChild(document.createTextNode("gbhjk"));
+//     var testing = document.querySelector("i");
+// function decr(){
+//     let z = false; 
+//     if (z == false){
+//         testing.style.display == "none";
+//         p.style.display = "block";
+
+//     }else {
+        
+
+//     }
+   
+}
+
 
 var gellary = document.querySelector(".gellary")
 var gell_Img = [

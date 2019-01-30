@@ -40,10 +40,10 @@ html, body{
 }
 .social_icon span {
     padding: 10px;
-    font-size: 1vw;
+    font-size: 0.8vw;
     background: white;
-    width: 3vw;
-    height: 3vw;
+    width: 2vw;
+    height: 2vw;
     margin-right: 5px;
     margin-left: 5px;
     border-radius: 50%;
@@ -69,7 +69,7 @@ html, body{
     font-size: 2vw;
     color: red;
     margin-left: 0.5vw;
-    margin-top: 1.3vw
+    margin-top: 1vw
 }
 .menu_list {
     height: 100%;
@@ -175,6 +175,10 @@ section>.square_items>*:nth-child(4){
     display: flex;
 
 }
+#test1 p  {
+    display: none;
+}
+
 .gellary>div{
     margin: 10px;
     display: flex;
@@ -212,7 +216,7 @@ section>.square_items>*:nth-child(4){
 
 @media only screen and (max-width: 500px) {
     .social_icon>*{
-        font-size: 4.5vw;
+        font-size: 6vw;
         width: 8vw;
         height: 8vw;
     }
