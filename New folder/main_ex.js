@@ -115,13 +115,13 @@ for (let i = 0; i < gell_Img.length; i++) {
     document.getElementsByClassName('gellary')[0].appendChild(img);
 };
 
-var x = document.getElementsByClassName('gellary')[0];
-x.addEventListener("click", myFunc)
-x.stopImmediatePropagation();
-function myFunc() {
-    x.style.height = "64px";
-  x.style.width = "64px";
-}
+// var x = document.getElementsByClassName('gellary')[0];
+// x.addEventListener("click", myFunc)
+// x.stopImmediatePropagation();
+// function myFunc() {
+//     x.style.height = "64px";
+//   x.style.width = "64px";
+// }
 
 
 
