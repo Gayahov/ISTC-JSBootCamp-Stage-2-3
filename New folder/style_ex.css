@@ -12,7 +12,7 @@ html, body{
 #container {
     width: 100%;
 }
-.header{
+#header{
         /* height: 26vw; */
         background: url('images/slide1.jpg');
         opacity: 0.8;
@@ -85,6 +85,7 @@ html, body{
     height: 100%;
     border-top: 2px solid transparent;
     display: flex;
+    transition: 0.3;
     justify-content: center;
     align-items: center;
 }
@@ -98,18 +99,18 @@ html, body{
     color: orange;
     border-top: 2px solid orange; 
 }
-header>h2{
+#header>h2{
     color: white;
     font-size: 2.5vw;
     border-bottom: 2px solid white;
     margin-top: 5vw;
 }
-header>p{
+#header>p{
     font-size: 1.2vw;
     color: white;
     margin-top: 1vw;
 }
-header>button{
+#header>button{
     font-size: 1vw;
     color: white;
     background: red;
@@ -197,10 +198,10 @@ section>.square_items>*:nth-child(4){
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: row;
-        width: 60vw;
+        width: 70vw;
     }
     section>.square_items>*{
-        width: 70vw;
+        width: 23vw;
         display: flex;
         margin: 1.5vw;
         padding-bottom: 1vw;
@@ -215,13 +216,21 @@ section>.square_items>*:nth-child(4){
 }
 
 @media only screen and (max-width: 500px) {
-    .social_icon>*{
-        font-size: 6vw;
-        width: 8vw;
-        height: 8vw;
+    .social_icon span{
+        font-size: 2vw;
+        width: 6vw;
+        height: 6vw;
+        margin-bottom: 12vh;
+    }
+    #header{
+        width: 72%;
+        padding: 5px;
+        margin: 5px;
+        margin: auto;
     }
     nav{
         height: 9vw;
+        position: relative;
     }
     #main_menu .logo{
         width: 9vw;
@@ -232,14 +241,18 @@ section>.square_items>*:nth-child(4){
     }
     #main_menu .menu_list{
         display: none;
-        
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
-        width: 16vw;
+        width: 9vw;
+        height: auto;
+        top: 103%;
+        background: white;
         padding-left: 0;
+        position: absolute;
     }
     #main_menu {
-        width: 9vw
+        width: 9vw;
+        min-height: 5vh;
     }
     #main_menu h3{
         display: none;

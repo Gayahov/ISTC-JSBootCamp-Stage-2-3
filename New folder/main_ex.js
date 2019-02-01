@@ -15,7 +15,7 @@ function ArmstrongNum (number){
 var container =  document.querySelector("#container");
 container.classList.add("container");
 
-var header = document.querySelector("header");
+var header = document.querySelector("#header");
 header.classList.add("header");
  
 var nav = document.querySelector("nav");
@@ -59,10 +59,10 @@ var menu_ul = [
     function showMenu(){
         if (menu_list.style.display === "none") {
             menu_list.style.display = "block";
-            logo_div.style.display = "none";
+            
           } else {
             menu_list.style.display = "none";
-            logo_div.style.display = "block"
+            
           }
         }
     
@@ -121,7 +121,7 @@ console.log (divs);
 
 //     }
    
-}
+
 
 
 var gellary = document.querySelector(".gellary")
