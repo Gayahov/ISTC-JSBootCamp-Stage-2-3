@@ -56,15 +56,15 @@ var menu_ul = [
         'TEAM',
         'CONTACT',
     ];
+
+
+
+logo_div.addEventListener("click", showMenu)
+
     function showMenu(){
-        if (menu_list.style.display === "none") {
-            menu_list.style.display = "block";
-            
-          } else {
-            menu_list.style.display = "none";
-            
-          }
-        }
+      menu_list.classList.remove("menu_list");
+        menu_list.classList.add("test1")
+      }
     
 
     for (let key in menu_ul) {
