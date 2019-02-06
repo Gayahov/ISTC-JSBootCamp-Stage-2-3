@@ -26,7 +26,7 @@ social_icon.classList.add("social_icon")
 nav.appendChild(social_icon);
 var social_fonts = [
     "fab fa-facebook-f",
-    "fab fa-twitter",
+    "fab fa-twitter",       
     "fab fa-google-plus-g",
     "fab fa-linkedin-in"
 ];
@@ -59,12 +59,15 @@ var menu_ul = [
 
 
 
-logo_div.addEventListener("click", showMenu)
 
-    function showMenu(){
-      menu_list.classList.remove("menu_list");
-        menu_list.classList.add("test1")
+     function showMenu(){
+      var x = document.getElementById("second_menu");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display ="none";
       }
+       }
     
 
     for (let key in menu_ul) {

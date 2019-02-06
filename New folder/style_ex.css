@@ -65,8 +65,36 @@ html, body{
     background-size: cover;
     cursor: pointer;
 }
+.logo_2{
+    display: none;
+    width: 4vw;
+    height: 4vw;
+    background-image: url('images/logo.png');
+    background-size: cover;
+    cursor: pointer;
+}
+#second_menu{
+    display: none;
+    width: 24vw;
+    background-color: #dcd0cc57;
+    text-align: center;
+    padding: 3vw;
+    border-radius: 10px;
+}
+#second_menu li {
+    font-size: 12px;
+    padding: 1vw;
+}
+#second_menu li a{
+    color: #c12d2de6;
+}
+#second_menu li:hover{
+    background-color: antiquewhite;
+    font-style: italic;
+}
 
-.test1 {
+
+.test {
     display: none;
 }
  #header h3{
@@ -196,21 +224,54 @@ section>.square_items>*:nth-child(4){
     section>p{
         font-size: 2vw;
     }
+    #main_menu {
+        display: none;
+        width: 4vw;
+        /* min-height: 5vh; */
+        box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+    }
+    .social_icon span{
+        font-size: 2vw;
+        width: 4vw;
+        height: 4vw;
+        margin-bottom: 12vh;
+    }
+    .logo_2{
+        display: block;
+        margin: 20px auto 0
+    }
+
+    #main_menu .menu_list{
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #main_menu .h3 {
+        display: none;
+    }
     section>.square_items{
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: row;
-        width: 70vw;
+        
+        width: 66%;
+        margin: auto;
     }
     section>.square_items>*{
-        width: 23vw;
+        width: 31vw;
+        height: 23vh;
         display: flex;
         margin: 1.5vw;
         padding-bottom: 1vw;
+        
+    }
+    .gellary{
+        width: 66%;
+        margin: auto;
     }
 
     .gellary>div{
-    width: 30vw;
+    width: 31vw;
     height: 23vh;
 }
 
@@ -230,11 +291,17 @@ section>.square_items>*:nth-child(4){
         margin: 5px;
         margin: auto;
     }
+    .logo_2{
+        display: block;
+        margin: 20px auto 0
+    }
+
     nav{
         height: 9vw;
         position: relative;
     }
     #main_menu .logo{
+        display: none;
         width: 9vw;
         height: 9vw;
     }
@@ -254,7 +321,7 @@ section>.square_items>*:nth-child(4){
     }
     #main_menu {
         width: 9vw;
-        min-height: 5vh;
+        /*min-height: 5vh;*/
         box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
     }
     #main_menu h3{
@@ -288,8 +355,10 @@ section>.square_items>*:nth-child(4){
     }
     section>.square_items>*{
         font-size: 6vw;
-        width: 70vw;
-        height: 70vw;
+        width: 60vw;
+        height: 60vw;
+        /* margin-bottom: 3vw; */
+        margin: 10px auto;
 
         margin-bottom: 3vw;
     }
@@ -298,9 +367,10 @@ section>.square_items>*:nth-child(4){
         justify-content: center
     }
     .gellary>div{
-        width: 70vw;
-        height: 70vw;
+        width: 60vw;
+        height: 60vw;
         margin-bottom: 3vw;
+
     }
 }
 
