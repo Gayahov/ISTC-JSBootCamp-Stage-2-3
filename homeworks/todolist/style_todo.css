@@ -29,7 +29,7 @@ h4{
     color: #aaa4a4;
     margin-left: 3vw;
 }
-#add_btn {
+.btn {
     outline: none;
     border: 1.5px solid #d8d4d4;
     padding: 5px;
@@ -40,9 +40,7 @@ h4{
     transition: .3s;
 
 }
-#add_btn:hover {
-    background-color: bisque;
-}
+
 .li_style {
     position: relative;
     display: block;

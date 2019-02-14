@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <skript src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></skript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+     
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>JQ template</title>
+</head>
+<body>
+    <div class ="container">
+        <header>
+        <div class = "header">
+            <div  class="contacts">
+                <ul>
+                    <li>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <a href="#">6036 Richmond hwy, Alexandria, VA USA 22303</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <a href="#">Mon – Sat: 9:00am–18:00pm. Sunday CLOSED</a>
+                    </li>
+                    <li>
+                         <i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="#">+1 (409) 987–5874</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="social">    
+                <a><i class="fab fa-facebook-f"></i></a>  
+                <a><i class="fab fa-twitter"></i></a> 
+                <a> <i class="fab fa-google-plus-g"></i></a>
+            </div>
+            
+
+            </div>
+            <div class="header_2">
+                <div class="logo"></div>
+                <div class="main_menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#"> About Us</a></li>
+                        <li id="dropDown"><a href="#">Pages <i class="fa fa-chevron-down" aria-hidden="true"></i> </a>
+                            <ul id="hidden_menu">
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Our team</a></li>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="#">Site Map</a></li>
+                                <li><a href="#"> Forum</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Appointment</a></li>
+                            </ul>
+                        
+                        </li>
+                
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li id="reg_icon"> 
+                            <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+                            <form id="reg_form">
+                                <label><i class="fa fa-user" aria-hidden="true"></i></lebel>
+                                <label  for="username">username</label>
+                                <input type="text" value="" placeholder="username">
+                                <label for="password"> password</label>
+                                <input type="password" value="" placeholder="password">
+                                
+                                <span> <input type="checkbox" value="Remember me" >Remember me</span>
+                                <button> Log in</button>
+                                <span>Forgot password?</span>
+                                <span>forgot username?</span>
+                                <span>Create an account></span>
+                                <div>
+                                    <button>Facebook</button>
+                                    <button>Google</button>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>     
+                </div>
+        </header>
+        <div class="slides">
+                <div id="left_btn"  onclick="plusSlides(-1)"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+                <div id="right_btn"onclick="plusSlides(1)"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+            <div id="slide_1" class="mySlides">
+                <div class="content">
+                    <div class="first"></div>
+                    <div class="second"></div>
+                    <div class="third"></div>
+                    <div class="fourth"></div>
+                    <h3 id="test"><b>UPGRADE</b> Your Bisness</h3>
+                    <p>We provide extensive assistance with any audits issues to modern bussinesses!</p>
+                    <button>Make Appointment</button>
+                </div>
+            </div>
+            <div id="slide_2" class="mySlides">
+                    <div class="content">
+                        <div class="first"></div>
+                        <div class="second"></div>
+                        <div class="third"></div>
+                        <div class="fourth"></div>
+                        <h3><b>Be</b> Successful, it's easy!</h3>
+                        <p>We will show you the way to success!</p>
+                        <button>Make Appointment</button>
+                    </div>
+                </div>
+
+        </div>
+        <div class="squere_item">
+            <div id="items">
+                    <i class="fa fa-briefcase big" aria-hidden="true"></i>
+                    <h4>Internal Audit</h4>
+                    <p>Audit services are designed to help your business mitigate risk, create new efficiencies and better support strategic objectives.</p>
+                    <i class="fa fa-arrow-right small" aria-hidden="true"></i>
+            </div>
+            <div id="items">
+                    <i class="fa fa-calculator big" aria-hidden="true"></i>
+                    <h4>Internal Audit</h4>
+                    <p>Audit services are designed to help your business mitigate risk, create new efficiencies and better support strategic objectives.</p>
+                    <i class="fa fa-arrow-right small" aria-hidden="true"></i>
+            </div>
+            <div id="items">
+                    <i class="fa fa-list-alt big" aria-hidden="true"></i>
+                    <h4>Internal Audit</h4>
+                    <p>Audit services are designed to help your business mitigate risk, create new efficiencies and better support strategic objectives.</p>
+                    <i class="fa fa-arrow-right small" aria-hidden="true"></i>
+            </div>
+            <div id="items">
+                    <i class="fa fa-phone big" aria-hidden="true"></i>
+                    <h4>Internal Audit</h4>
+                    <p>Audit services are designed to help your business mitigate risk, create new efficiencies and better support strategic objectives .</p>
+                    <i class="fa fa-arrow-right small" aria-hidden="true"></i>
+            </div>
+            <div id="items">
+                    <i class="fa fa-thumbs-up big" aria-hidden="true"></i>
+                    <h4>Internal Audit</h4>
+                    <p>Audit services are designed to help your business mitigate risk, create new efficiencies and better support strategic objectives.</p>
+                    <i class="fa fa-arrow-right small" aria-hidden="true"></i>
+            </div>
+            <div id="items">
+                    <i class="fa fa-star big" aria-hidden="true"></i>
+                    <h4>Internal Audit</h4>
+                    <p>Audit services are designed to help your business mitigate risk, create new efficiencies and better support strategic objectives.</p>
+                    <i class="fa fa-arrow-right small" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="green_bg">
+            <div class=" grey_bg">
+                <h4>LOOKING FOR</h4>
+                <h3>A FIRST-CLASS <b> AUDITOR?</b></h3>
+                <p>With a lot of experience in audit, hiring us will become a proper solution for your business!</p>
+                <div class="test" >
+                <div class="count"> 
+                    <h3><b>850</b></h3>
+                    <h5>TRUSTED CLIENTS</h5>
+                </div>
+                <div class="before"></div>
+                <div class="count"> 
+                        <h3><b>18</b></h3>
+                        <h5>AWARDS</h5>
+                    </div>
+                    <div class="before"></div>
+                    <div class="count"> 
+                            <h3 ><b>21</b></h3>
+                            <h5>YEARS OF EXPERIANCE</h5>
+                        </div>
+                        <div class="before"></div>
+                        <div class="count"> 
+                                <h3><b>16</b></h3>
+                                <h5>Experts</h5>
+                         </div>
+                </div>
+                <button>Make Appointment</button>
+                <span>or</span>
+                <button>SEE ALL SERVICES</button>
+            </div>
+        </div>
+        <div class="team_members" >
+                <div id="left_btn_2"  onclick="slides(-1)"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+                <div id="right_btn_2"onclick="slides(-1)"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                <h3><b>OUR</b> TEAM</h3>
+            <div class="team" id="owl-demo">
+                <div class="section item">
+                    <div class="circle"></div>
+                    <h4>John Doe</h4>
+                    <p>Managing Director</p>              
+                        <div class="team_info">
+                            <p> <i class="fa fa-phone" aria-hidden="true"></i>+1(609) 567-8974</p>
+                            <p> <i class="fa fa-envelope" aria-hidden="true"></i> info@demolink.com</p>
+                        </div>
+                </div>
+               
+                <div class="section item">
+                    <div class="circle circle_2"></div>
+                    <h4>John Doe</h4>
+                    <p>Managing Director</p>              
+                    <div class="team_info">
+                        <p> <i class="fa fa-phone" aria-hidden="true"></i>+1(609) 567-8974</p>
+                        <p> <i class="fa fa-envelope" aria-hidden="true"></i> info@demolink.com</p>
+                    </div>
+                </div>
+                <div class="section item">
+                        <div class="circle circle_3"></div>
+                        <h4>John Doe</h4>
+                        <p>Managing Director</p>              
+                        <div class="team_info">
+                            <p> <i class="fa fa-phone" aria-hidden="true"></i>+1(609) 567-8974</p>
+                            <p> <i class="fa fa-envelope" aria-hidden="true"></i> info@demolink.com</p>
+                        </div>
+                </div>
+                <div class="section item">
+                        <div class="circle circle_4"></div>
+                        <h4>John Doe</h4>
+                        <p>Managing Director</p>              
+                        <div class="team_info">
+                            <p> <i class="fa fa-phone" aria-hidden="true"></i>+1(609) 567-8974</p>
+                            <p> <i class="fa fa-envelope" aria-hidden="true"></i> info@demolink.com</p>
+                        </div>
+                 </div>
+                 <div class="section item">
+                        <div class="circle circle_5"></div>
+                        <h4>John Doe</h4>
+                        <p>Managing Director</p>              
+                        <div class="team_info">
+                            <p> <i class="fa fa-phone" aria-hidden="true"></i>+1(609) 567-8974</p>
+                            <p> <i class="fa fa-envelope" aria-hidden="true"></i> info@demolink.com</p>
+                        </div>
+                 </div>
+        </div>
+
+        <div class="green_form">
+                <h3><b>Request</b> A CALLBACK</h3>
+                <div>
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Phone Number">
+                    <select>
+                            <option value="I Would Like to Discuss">I Would Like to Discuss</option>
+                            <option value="I Would Like to Discuss">I Would Like to Discuss</option>
+                            <option value="I Would Like to Discuss">I Would Like to Discuss</option>
+                            <option value="I Would Like to Discuss">I Would Like to Discuss</option>
+                           
+                          </select>
+                </div>
+
+        </div>
+
+
+      
+        </div>
+
+
+
+
+
+
+
+
+
+
+    
+   
+    
+
+    
+      
+    <script src="main.js"></script>
+</body>
+</html>

@@ -27,8 +27,6 @@ function newElement() {
    }
   
     document.getElementById("add_input").value = "";
-
-};
     var dd = document.getElementsByClassName("check")
 
         // mark as done
@@ -44,26 +42,40 @@ function newElement() {
      };
 
    };
-
-   console.log(toDo)
-        // remove checked list
+   //console.log(toDo)
+    // remove checked list
     var remove = document.getElementsByClassName("remove");
-    //console.log(remove);
-    var i;
-    var removed = []
     for (i = 0; i < remove.length; i++) {
         remove[i].onclick = function() {
-            for (j = 0; j<toDo.length; j++){
-
-            }
-            var div = this.parentElement;
-            div.style.display = "none";
-            removed.unshift("div")
-            //console.log(removed)
-
+            item = this.parentElement;
+            item.parentNode.removeChild(item);
+            for (var i = 0; i < toDo.length; i++ ){ 
+                if(toDo[i] === this.parentElement.getElementsByClassName("li_style")[0]){
+                    toDo.splice(i,1);
+                    break;  
+            };
         };
-    };
+     };
+     
+ };
+ 
+ document.getElementById("show_active").addEventListener("click", function(){ 
+    
+        var all = document.getElementsByTagName("li");
+        for(var j = 0;j<all.length; j++){
+            console.log(all[j]);
+        all[j] = this.parentElement
+        
+        console.log(all[j])
+            if(all[j].classList.contains("checked")){ 
+                all[j].parentElement.style.display = "none"
+              };
+        };
+ });
 
+    
+
+}
 
 
 
