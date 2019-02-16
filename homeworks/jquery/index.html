@@ -4,17 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
     <skript src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></skript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-     
-    
-    <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>JQ template</title>
 </head>
 <body>
@@ -93,7 +88,7 @@
                     </ul>     
                 </div>
         </header>
-        <div class="slides">
+        <div class="slides slider">
                 <div id="left_btn"  onclick="plusSlides(-1)"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
                 <div id="right_btn"onclick="plusSlides(1)"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
             <div id="slide_1" class="mySlides">
@@ -165,22 +160,22 @@
                 <p>With a lot of experience in audit, hiring us will become a proper solution for your business!</p>
                 <div class="test" >
                 <div class="count"> 
-                    <h3><b>850</b></h3>
+                    <h3 class="timer"><b></b></h3>
                     <h5>TRUSTED CLIENTS</h5>
                 </div>
                 <div class="before"></div>
                 <div class="count"> 
-                        <h3><b>18</b></h3>
+                        <h3 class="timer_2"><b>18</b></h3>
                         <h5>AWARDS</h5>
                     </div>
                     <div class="before"></div>
                     <div class="count"> 
-                            <h3 ><b>21</b></h3>
+                            <h3  class="timer_3" ><b>21</b></h3>
                             <h5>YEARS OF EXPERIANCE</h5>
                         </div>
                         <div class="before"></div>
                         <div class="count"> 
-                                <h3><b>16</b></h3>
+                                <h3  class="timer_4"><b>16</b></h3>
                                 <h5>Experts</h5>
                          </div>
                 </div>
@@ -193,7 +188,8 @@
                 <div id="left_btn_2"  onclick="slides(-1)"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
                 <div id="right_btn_2"onclick="slides(-1)"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
                 <h3><b>OUR</b> TEAM</h3>
-            <div class="team" id="owl-demo">
+            <div class="team owl-carousel owl-theme">
+
                 <div class="section item">
                     <div class="circle"></div>
                     <h4>John Doe</h4>
@@ -275,8 +271,10 @@
    
     
 
-    
-      
-    <script src="main.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="/node_modules/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script> 
+    <script src="js/main.js"></script>
 </body>
 </html>
