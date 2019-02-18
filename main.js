@@ -1,4 +1,4 @@
-function getObj() {                                    
+/*function getObj() {                                    
     fetch("https://jsonplaceholder.typicode.com/todos")
       .then(res => res.json())
       .then(response => writeData(response))                    // call writeData() function to display data
@@ -7,7 +7,7 @@ function getObj() {
 
 var ul = document.getElementById('get_data')[0];        // get 'ul' element 
 
-/*  */
+
 function writeData(res) {
     for (let i = 0; i < 5; i++) {
         var li = document.createElement('li');
@@ -61,3 +61,12 @@ fetch('https://jsonplaceholder.typicode.com/users', {
     })
   })
 
+*/
+
+
+
+function Person(name,surname,nationality ) = {
+    this.name = name;
+    this.surname = surname;
+    this.nationality;
+}
