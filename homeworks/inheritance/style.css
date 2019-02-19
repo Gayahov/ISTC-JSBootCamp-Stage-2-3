@@ -1,0 +1,48 @@
+.wrapper {
+    background-color: #8BC34A;
+    display: flex;
+    margin: auto;
+
+}
+legend{
+    color: blue;
+}
+form {
+    margin: 25px;
+}
+label {
+    color:blue;
+    margin: auto;
+    display: block;
+}
+
+input {
+    display: block;
+    padding: 5px;
+    box-shadow: 0px 3px 23px 0px rgba(127,132,135,1);
+}
+.button {
+    margin: 5px auto;
+    box-shadow: 0px 3px 23px 0px rgba(31,146,217,1);
+}
+fieldset {
+    
+    background-color: #a2babb03;
+    box-shadow: 0px 3px 23px 0px rgba(31,146,217,1);
+    border-color: #23d9e8;
+    width: 200px;
+    font-style: italic;
+    margin: 20px auto;
+    border: none;
+}
+
+.values {
+    background-color: #a2babb;
+    width: 200px;
+    height: 60px;
+    box-shadow: 0px 3px 23px 0px rgba(31,146,217,1);
+    border: none;
+    margin: auto;
+    
+
+}
